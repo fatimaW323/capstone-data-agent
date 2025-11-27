@@ -130,7 +130,7 @@ def initialize_llm(api_key: str):
     """Initialize Google Gemini."""
     try:
         genai.configure(api_key=api_key)
-        model = genai.GenerativeModel('gemini-pro')
+        model = genai.GenerativeModel('gemini-1.5-flash')
         st.session_state.llm = model
         return True
     except Exception as e:
