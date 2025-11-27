@@ -125,18 +125,15 @@ Provide a clear, structured summary."""
 # ============================================================================
 # LLM INITIALIZATION
 # ============================================================================
-
 def initialize_llm(api_key: str):
-    """Initialize Google Gemini."""
     try:
         genai.configure(api_key=api_key)
-        model = genai.GenerativeModel('gemini-1.5-flash')
+        model = genai.GenerativeModel('gemini-1.5-flash')  # ✅ NEW
         st.session_state.llm = model
         return True
     except Exception as e:
         st.error(f"Failed to initialize Gemini: {str(e)}")
         return False
-
 # ============================================================================
 # CHAT FUNCTIONS
 # ============================================================================
