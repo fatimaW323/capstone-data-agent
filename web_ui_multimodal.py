@@ -128,7 +128,7 @@ Provide a clear, structured summary."""
 def initialize_llm(api_key: str):
     try:
         genai.configure(api_key=api_key)
-        model = genai.GenerativeModel('gemini-1.5-flash')  # ✅ NEW
+        model = genai.GenerativeModel('models/gemini-2.5-flash')  # ✅ NEW
         st.session_state.llm = model
         return True
     except Exception as e:
