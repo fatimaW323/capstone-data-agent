@@ -57,7 +57,7 @@ An autonomous multi-agent system that:
 
 ### ✅ **Requirement 2: Real-World Problem**
 
-**Problem:** Data quality automation  
+**Problem:** Data quality automation, Quick Insights 
 **Users:** Data scientists, analysts, business users  
 **Impact:** Measurable time savings, consistent quality  
 
